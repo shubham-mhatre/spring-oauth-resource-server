@@ -1,0 +1,8 @@
+spring:
+  application:
+    name : spring-boot-resource-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://login.microsoftonline.com/<your-tenant-id>/v2.0
