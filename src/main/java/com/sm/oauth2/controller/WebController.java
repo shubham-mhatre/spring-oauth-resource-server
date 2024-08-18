@@ -15,7 +15,7 @@ public class WebController {
 	@GetMapping("/token/api")
 	public String get(@AuthenticationPrincipal Jwt jwt) {
 		Map<String,Object>claims = jwt.getClaims();
-		
+		System.out.println("claims : "+claims);
 		String email = claims.get("preferred_username").toString();
 		System.out.println("email : "+email);
 		
